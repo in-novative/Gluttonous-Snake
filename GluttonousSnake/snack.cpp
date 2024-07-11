@@ -10,7 +10,7 @@ snack::snack(mazePtr M, int misc) : M(M){
     snack_body.push_front(std::make_pair(x, y+1));
     snack_body.push_front(std::make_pair(x, y));
     snack_body.push_front(std::make_pair(x, y-1));
-    M->modifyMaze(x, y-1, MAZE_TYPE::SNACK_HEAD);
+    M->modifyMaze(x, y-1, MAZE_TYPE::SNACK_HEAD_UP);
     M->modifyMaze(x, y, MAZE_TYPE::SNACK_BODY);
     M->modifyMaze(x, y+1, MAZE_TYPE::SNACK_TAIL);
 
@@ -55,7 +55,10 @@ MAZE_TYPE snack::move(DIRECTION D){
             modify_snack();
             break;
         }
-        case MAZE_TYPE::SNACK_HEAD :
+        case MAZE_TYPE::SNACK_HEAD_UP :
+        case MAZE_TYPE::SNACK_HEAD_DOWN :
+        case MAZE_TYPE::SNACK_HEAD_LEFT :
+        case MAZE_TYPE::SNACK_HEAD_RIGHT :
         case MAZE_TYPE::SNACK_BODY : {
             //crash("YOU HIT YOUR BODY!");
             break;
@@ -72,7 +75,7 @@ MAZE_TYPE snack::move(DIRECTION D){
 }
 
 void snack::modify_snack(){
-    M->modifyMaze(snack_body.begin()->first, snack_body.begin()->second, MAZE_TYPE::SNACK_HEAD);
+    M->modifyMaze(snack_body.begin()->first, snack_body.begin()->second, SNACK_HEAD_LEFT+snack_towards);
     M->modifyMaze(std::next(snack_body.begin(), 1)->first, std::next(snack_body.begin(), 1)->second, MAZE_TYPE::SNACK_BODY);
     M->modifyMaze(std::prev(snack_body.end(), 1)->first, std::prev(snack_body.end(), 1)->second, MAZE_TYPE::SNACK_TAIL);
     M->modifyMaze(snack_body.end()->first, snack_body.end()->second, MAZE_TYPE::BLANK);

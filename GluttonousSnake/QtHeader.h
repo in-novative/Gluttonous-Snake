@@ -24,14 +24,14 @@
 #include <string>
 #include <iterator>
 
-#define interfaceLength 700
-#define interfaceWidth 500
-#define mazeLength 30
-#define mazeWidth 18
-#define GRID 20
-#define XORIGIN 50
-#define YORIGIN 125
-#define SECOND 1000
+#define interfaceLength (700)
+#define interfaceWidth (500)
+#define mazeLength (30)
+#define mazeWidth (18)
+#define GRID (20)
+#define XORIGIN (50)
+#define YORIGIN (125)
+#define SECOND (1000)
 
 using uint = unsigned int;
 using position = std::pair<uint, uint>;
@@ -45,10 +45,14 @@ enum DIRECTION{
 };
 
 enum MAZE_TYPE{
-    WALL = 0,
+    BACKGROUND = 0,
+    WALL,
     BLANK,
     STAR,
-    SNACK_HEAD,
+    SNACK_HEAD_LEFT,
+    SNACK_HEAD_UP,
+    SNACK_HEAD_DOWN,
+    SNACK_HEAD_RIGHT,
     SNACK_BODY,
     SNACK_TAIL,
     PROP,

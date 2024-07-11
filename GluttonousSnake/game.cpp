@@ -63,7 +63,7 @@ void game::soloChallenge(){
             _snack->timerStop();
             crash("YOU HIT A WALL!");
         }
-        else if(target==SNACK_HEAD || target==SNACK_BODY){
+        else if(3<=target && target<=7){
             _star->timerStop(1);
             _star->timerStop(2);
             _snack->timerStop();
@@ -95,7 +95,7 @@ void game::soloChallenge(){
         _star->timerStop(2);
         _maze->flashMaze(x, y, 2*SECOND, 0.4*SECOND, WALL);
 
-        QTimer::singleShot(2*SECOND, [=]() {
+        QTimer::singleShot(3*SECOND, [=]() {
             int misc = QRandomGenerator::global()->bounded(2*SECOND, 5*SECOND);
             _star->getTimer(1)->setInterval(misc);
             _star->timerStart(1);

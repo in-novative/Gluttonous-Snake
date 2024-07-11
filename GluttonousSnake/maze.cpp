@@ -39,9 +39,9 @@ maze::~maze(){
     //qDebug() << "maze destruct";
 }
 
-bool maze::modifyMaze(uint x, uint y, MAZE_TYPE i){
+bool maze::modifyMaze(uint x, uint y, uint i){
     if(_maze[x][y] != MAZE_TYPE::WALL){
-        _maze[x][y] = i;
+        _maze[x][y] = static_cast<MAZE_TYPE>(i);
         drawMaze(XORIGIN+x*GRID, YORIGIN+y*GRID, GRID, GRID, i);
         if(i == MAZE_TYPE::WALL)
             ++wall_num;
@@ -51,8 +51,8 @@ bool maze::modifyMaze(uint x, uint y, MAZE_TYPE i){
         return false;
 }
 
-void maze::flashMaze(uint x, uint y, int duration, int interval, MAZE_TYPE final){
-    auto tmp = new MAZE_TYPE;
+void maze::flashMaze(uint x, uint y, int duration, int interval, uint final){
+    auto tmp = new uint;
     *tmp = _maze[x][y];
 
     QTimer *timer = new QTimer;
@@ -76,11 +76,7 @@ void maze::flashMaze(uint x, uint y, int duration, int interval, MAZE_TYPE final
 }
 
 void maze::drawMaze(){
-    for(uint i=0; i<maze_length; ++i){
-        for(uint j=0; j<maze_width; ++j){
-            drawMaze(XORIGIN+i*GRID, YORIGIN+j*GRID, GRID, GRID, _maze[i][j]);
-        }
-    }
+    drawMaze(XORIGIN, YORIGIN, mazeLength*GRID, mazeWidth*GRID, BACKGROUND);
 }
 
 void maze::drawMaze(uint position_x, uint position_y, uint length, uint width, uint image){
@@ -89,23 +85,35 @@ void maze::drawMaze(uint position_x, uint position_y, uint length, uint width, u
 
 QString maze::getImagePath(uint type){
     switch(type){
+        case BACKGROUND:{
+            return "C:\\Users\\0range\\Desktop\\Gluttonous Snake\\image\\background.png";
+        }
         case WALL:{
             return "C:\\Users\\0range\\Desktop\\Gluttonous Snake\\image\\wall.png";
         }
         case BLANK:{
-            return "C:\\Users\\0range\\Desktop\\Gluttonous Snake\\image\\blank.jpg";
+            return "C:\\Users\\0range\\Desktop\\Gluttonous Snake\\image\\blank.png";
         }
         case STAR:{
-            return "C:\\Users\\0range\\Desktop\\Gluttonous Snake\\image\\star.png";
+            return "C:\\Users\\0range\\Desktop\\Gluttonous Snake\\image\\star.jpg";
         }
-        case SNACK_HEAD:{
-            return "C:\\Users\\0range\\Desktop\\Gluttonous Snake\\image\\snack.jpg";
+        case SNACK_HEAD_UP:{
+            return "C:\\Users\\0range\\Desktop\\Gluttonous Snake\\image\\head_up.jpg";
+        }
+        case SNACK_HEAD_DOWN:{
+            return "C:\\Users\\0range\\Desktop\\Gluttonous Snake\\image\\head_down.jpg";
+        }
+        case SNACK_HEAD_LEFT:{
+            return "C:\\Users\\0range\\Desktop\\Gluttonous Snake\\image\\head_left.jpg";
+        }
+        case SNACK_HEAD_RIGHT:{
+            return "C:\\Users\\0range\\Desktop\\Gluttonous Snake\\image\\head_right.jpg";
         }
         case SNACK_BODY:{
-            return "C:\\Users\\0range\\Desktop\\Gluttonous Snake\\image\\snack.jpg";
+            return "C:\\Users\\0range\\Desktop\\Gluttonous Snake\\image\\body.jpg";
         }
         case SNACK_TAIL:{
-            return "C:\\Users\\0range\\Desktop\\Gluttonous Snake\\image\\snack.jpg";
+            return "C:\\Users\\0range\\Desktop\\Gluttonous Snake\\image\\body.jpg";
         }
         case PROP:{
             return "C:\\Users\\0range\\Desktop\\Gluttonous Snake\\image\\blank.jpg";
