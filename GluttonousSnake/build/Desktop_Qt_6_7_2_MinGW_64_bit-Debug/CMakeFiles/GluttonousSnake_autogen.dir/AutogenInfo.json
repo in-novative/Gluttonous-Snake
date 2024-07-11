@@ -302,6 +302,12 @@
 			"MU",
 			"EWIEGA46WW/moc_snack.cpp",
 			null
+		],
+		[
+			"C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/star.h",
+			"MU",
+			"EWIEGA46WW/moc_star.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -402,6 +408,11 @@
 		],
 		[
 			"C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/snack.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/star.cpp",
 			"MU",
 			null
 		]

@@ -1,50 +1,76 @@
 # ninja log v6
-1054	11265	7423339160713601	CMakeFiles/GluttonousSnake.dir/maze.cpp.obj	a0a437b1d724e595
-24	80	7423340646092906	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	dde6b76589ee8ba0
-70	995	7423339159166022	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/timestamp	fd024c064d71385a
-70	995	7423339159166022	GluttonousSnake_autogen/timestamp	fd024c064d71385a
-70	995	7423339159166022	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
-70	995	7423339159166022	GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
-1013	11221	7423339160313594	CMakeFiles/GluttonousSnake.dir/main.cpp.obj	9e4b50fe31513e76
-1003	11619	7423339160233603	CMakeFiles/GluttonousSnake.dir/GluttonousSnake_autogen/mocs_compilation.cpp.obj	fbff140f008c3c25
-80	821	7423340652778661	build.ninja	5e36565ee1ffd57
-20	78	7423340653905181	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	dde6b76589ee8ba0
-99	282	7423340654693723	GluttonousSnake_autogen/timestamp	fd024c064d71385a
-99	282	7423340654693723	GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
-99	282	7423340654693723	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/timestamp	fd024c064d71385a
-99	282	7423340654693723	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
-294	5496	7423340656668367	CMakeFiles/GluttonousSnake.dir/snack.cpp.obj	9dddf7379ced00ea
-21	101	7423341047154857	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	dde6b76589ee8ba0
-117	375	7423341048097464	GluttonousSnake_autogen/timestamp	fd024c064d71385a
-117	375	7423341048097464	GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
-117	375	7423341048097464	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/timestamp	fd024c064d71385a
-117	375	7423341048097464	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
-377	5990	7423341050707045	CMakeFiles/GluttonousSnake.dir/mainwindow.cpp.obj	9885080a36142453
-24	105	7423341571778402	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	dde6b76589ee8ba0
-119	315	7423341572743702	GluttonousSnake_autogen/timestamp	fd024c064d71385a
-119	315	7423341572743702	GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
-119	315	7423341572743702	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/timestamp	fd024c064d71385a
-119	315	7423341572743702	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
-317	4700	7423341574737994	CMakeFiles/GluttonousSnake.dir/mainwindow.cpp.obj	9885080a36142453
-17	73	7423342764728928	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	dde6b76589ee8ba0
-83	250	7423342765413425	GluttonousSnake_autogen/timestamp	fd024c064d71385a
-83	250	7423342765413425	GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
-83	250	7423342765413425	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/timestamp	fd024c064d71385a
-83	250	7423342765413425	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
-251	4029	7423342767097204	CMakeFiles/GluttonousSnake.dir/mainwindow.cpp.obj	9885080a36142453
-24	77	7423343008293661	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	dde6b76589ee8ba0
-86	227	7423343008945134	GluttonousSnake_autogen/timestamp	fd024c064d71385a
-86	227	7423343008945134	GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
-86	227	7423343008945134	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/timestamp	fd024c064d71385a
-86	227	7423343008945134	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
-236	4167	7423343010439035	CMakeFiles/GluttonousSnake.dir/interface.cpp.obj	57219a770eed8efa
-229	4313	7423343010359021	CMakeFiles/GluttonousSnake.dir/mainwindow.cpp.obj	9885080a36142453
-17	70	7423343342012245	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	dde6b76589ee8ba0
-80	229	7423343342647882	GluttonousSnake_autogen/timestamp	fd024c064d71385a
-80	229	7423343342647882	GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
-80	229	7423343342647882	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/timestamp	fd024c064d71385a
-80	229	7423343342647882	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
-235	3154	7423343344193051	CMakeFiles/GluttonousSnake.dir/game.cpp.obj	5f50a4ea5f9b98d9
-231	3300	7423343344153071	CMakeFiles/GluttonousSnake.dir/mainwindow.cpp.obj	9885080a36142453
-3301	3700	7423343374857411	GluttonousSnake.exe	b89528c7229b1d27
-17	68	7423343402392380	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	dde6b76589ee8ba0
+29455	30340	7423659244513474	GluttonousSnake.exe	4e29efd84737cd67
+1347	10925	7423673799008347	CMakeFiles/GluttonousSnake.dir/maze.cpp.obj	a0a437b1d724e595
+19	120	7423677348100245	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	dde6b76589ee8ba0
+130	272	7423677349210391	GluttonousSnake_autogen/timestamp	fd024c064d71385a
+130	272	7423677349210391	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/timestamp	fd024c064d71385a
+781	6004	7423658304334188	CMakeFiles/GluttonousSnake.dir/star.cpp.obj	fb8eb3d7939d3f9b
+130	272	7423677349210391	GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
+130	272	7423677349210391	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
+1324	10443	7423673798778360	CMakeFiles/GluttonousSnake.dir/main.cpp.obj	9e4b50fe31513e76
+1319	10795	7423673798728390	CMakeFiles/GluttonousSnake.dir/GluttonousSnake_autogen/mocs_compilation.cpp.obj	fbff140f008c3c25
+80	821	7423642516483004	build.ninja	5e36565ee1ffd57
+393	7483	7423674175650858	CMakeFiles/GluttonousSnake.dir/snack.cpp.obj	9dddf7379ced00ea
+273	3952	7423677350640266	CMakeFiles/GluttonousSnake.dir/mainwindow.cpp.obj	9885080a36142453
+345	6147	7423676822364864	CMakeFiles/GluttonousSnake.dir/interface.cpp.obj	57219a770eed8efa
+341	6046	7423676822324864	CMakeFiles/GluttonousSnake.dir/game.cpp.obj	5f50a4ea5f9b98d9
+25	178	7423677576581657	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	dde6b76589ee8ba0
+196	382	7423677578281673	GluttonousSnake_autogen/timestamp	fd024c064d71385a
+196	382	7423677578281673	GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
+196	382	7423677578281673	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/timestamp	fd024c064d71385a
+196	382	7423677578281673	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
+384	5425	7423677580166893	CMakeFiles/GluttonousSnake.dir/mainwindow.cpp.obj	9885080a36142453
+24	171	7423677758380645	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	dde6b76589ee8ba0
+185	477	7423677760000670	GluttonousSnake_autogen/timestamp	fd024c064d71385a
+185	477	7423677760000670	GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
+185	477	7423677760000670	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/timestamp	fd024c064d71385a
+185	477	7423677760000670	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
+479	6319	7423677762929239	CMakeFiles/GluttonousSnake.dir/mainwindow.cpp.obj	9885080a36142453
+28	167	7423678193991682	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	dde6b76589ee8ba0
+181	375	7423678195521681	GluttonousSnake_autogen/timestamp	fd024c064d71385a
+181	375	7423678195521681	GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
+181	375	7423678195521681	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/timestamp	fd024c064d71385a
+181	375	7423678195521681	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
+381	4848	7423678197512103	CMakeFiles/GluttonousSnake.dir/star.cpp.obj	fb8eb3d7939d3f9b
+376	5550	7423678197472104	CMakeFiles/GluttonousSnake.dir/mainwindow.cpp.obj	9885080a36142453
+5551	6154	7423678249217534	GluttonousSnake.exe	4e29efd84737cd67
+28	169	7423678352036528	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	dde6b76589ee8ba0
+184	364	7423678353596002	GluttonousSnake_autogen/timestamp	fd024c064d71385a
+184	364	7423678353596002	GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
+184	364	7423678353596002	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/timestamp	fd024c064d71385a
+184	364	7423678353596002	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
+370	5648	7423678355456024	CMakeFiles/GluttonousSnake.dir/star.cpp.obj	fb8eb3d7939d3f9b
+366	6490	7423678355416015	CMakeFiles/GluttonousSnake.dir/mainwindow.cpp.obj	9885080a36142453
+6491	7145	7423678416663430	GluttonousSnake.exe	4e29efd84737cd67
+27	167	7423678568095900	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	dde6b76589ee8ba0
+184	373	7423678569665902	GluttonousSnake_autogen/timestamp	fd024c064d71385a
+184	373	7423678569665902	GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
+184	373	7423678569665902	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/timestamp	fd024c064d71385a
+184	373	7423678569665902	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
+379	5335	7423678571605908	CMakeFiles/GluttonousSnake.dir/game.cpp.obj	5f50a4ea5f9b98d9
+375	5537	7423678571565908	CMakeFiles/GluttonousSnake.dir/mainwindow.cpp.obj	9885080a36142453
+5537	5997	7423678623194660	GluttonousSnake.exe	4e29efd84737cd67
+32	191	7423682821894139	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	dde6b76589ee8ba0
+207	595	7423682823654115	GluttonousSnake_autogen/timestamp	fd024c064d71385a
+207	595	7423682823654115	GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
+207	595	7423682823654115	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/timestamp	fd024c064d71385a
+207	595	7423682823654115	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
+602	6878	7423682827594119	CMakeFiles/GluttonousSnake.dir/game.cpp.obj	5f50a4ea5f9b98d9
+597	6970	7423682827544141	CMakeFiles/GluttonousSnake.dir/mainwindow.cpp.obj	9885080a36142453
+6970	7666	7423682891282073	GluttonousSnake.exe	4e29efd84737cd67
+22	138	7423683604706229	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	dde6b76589ee8ba0
+151	331	7423683605986248	GluttonousSnake_autogen/timestamp	fd024c064d71385a
+151	331	7423683605986248	GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
+151	331	7423683605986248	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/timestamp	fd024c064d71385a
+151	331	7423683605986248	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
+336	4572	7423683607836248	CMakeFiles/GluttonousSnake.dir/game.cpp.obj	5f50a4ea5f9b98d9
+332	4793	7423683607806243	CMakeFiles/GluttonousSnake.dir/mainwindow.cpp.obj	9885080a36142453
+4793	5140	7423683652413075	GluttonousSnake.exe	4e29efd84737cd67
+26	179	7423684563613057	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	dde6b76589ee8ba0
+194	397	7423684565289989	GluttonousSnake_autogen/timestamp	fd024c064d71385a
+194	397	7423684565289989	GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
+194	397	7423684565289989	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/timestamp	fd024c064d71385a
+194	397	7423684565289989	C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/mocs_compilation.cpp	fd024c064d71385a
+404	6604	7423684567389939	CMakeFiles/GluttonousSnake.dir/game.cpp.obj	5f50a4ea5f9b98d9
+399	6742	7423684567339929	CMakeFiles/GluttonousSnake.dir/mainwindow.cpp.obj	9885080a36142453
+6742	7286	7423684630777791	GluttonousSnake.exe	4e29efd84737cd67

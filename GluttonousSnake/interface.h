@@ -2,6 +2,7 @@
 #define STARTINTERFACE_H
 
 #include "QtHeader.h"
+#include "mainwindow.h"
 
 void beginInterface();
 void gameInterface();

@@ -31,6 +31,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         maze.h maze.cpp
         QtHeader.h
         snack.h snack.cpp
+        star.h star.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET GluttonousSnake APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

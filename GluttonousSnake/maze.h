@@ -2,6 +2,7 @@
 #define MAZE_H
 
 #include "QtHeader.h"
+#include "mainwindow.h"
 
 typedef class maze{
 public:
@@ -19,6 +20,5 @@ private:
     uint maze_length = 0, maze_width = 0, wall_num = 0;
     MAZE_TYPE **_maze = nullptr;
 }*mazePtr;
-
 
 #endif // MAZE_H

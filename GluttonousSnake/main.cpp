@@ -15,7 +15,7 @@ int main(int argc, char *argv[]) {
     app = &_app;
 
     window->setWindowTitle("贪吃蛇游戏");
-    window->resize(1400, 1000);
+    window->resize(interfaceLength, interfaceWidth);
 
     beginInterface();
     window->show();

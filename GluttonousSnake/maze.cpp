@@ -1,6 +1,3 @@
-#include <iostream>
-#include <cstdlib>
-#include <ctime>
 #include "maze.h"
 
 QVector<QPixmap> MazeImages;
@@ -64,30 +61,27 @@ void maze::drawMaze(uint position_x, uint position_y, uint length, uint width, u
 
 QString maze::getImagePath(uint type){
     switch(type){
-    case WALL:{
-        return "C:\\Users\\0range\\Desktop\\test\\image\\wall.png";
+        case WALL:{
+            return "C:\\Users\\0range\\Desktop\\Gluttonous Snake\\image\\wall.png";
+        }
+        case BLANK:{
+            return "C:\\Users\\0range\\Desktop\\Gluttonous Snake\\image\\blank.jpg";
+        }
+        case STAR:{
+            return "C:\\Users\\0range\\Desktop\\Gluttonous Snake\\image\\star.png";
+        }
+        case SNACK_HEAD:{
+            return "C:\\Users\\0range\\Desktop\\Gluttonous Snake\\image\\snack.jpg";
+        }
+        case SNACK_BODY:{
+            return "C:\\Users\\0range\\Desktop\\Gluttonous Snake\\image\\snack.jpg";
+        }
+        case SNACK_TAIL:{
+            return "C:\\Users\\0range\\Desktop\\Gluttonous Snake\\image\\snack.jpg";
+        }
+        case PROP:{
+            return "C:\\Users\\0range\\Desktop\\Gluttonous Snake\\image\\blank.jpg";
+        }
     }
-    case BLANK:{
-        return "C:\\Users\\0range\\Desktop\\test\\image\\blank.jpg";
-    }
-    case STAR:{
-        return "C:\\Users\\0range\\Desktop\\test\\image\\blank.jpg";
-    }
-    case SNACK_HEAD:{
-        return "C:\\Users\\0range\\Desktop\\test\\image\\snack.jpg";
-    }
-    case SNACK_BODY:{
-        return "C:\\Users\\0range\\Desktop\\test\\image\\snack.jpg";
-    }
-    case SNACK_TAIL:{
-        return "C:\\Users\\0range\\Desktop\\test\\image\\snack.jpg";
-    }
-    case PROP:{
-        return "C:\\Users\\0range\\Desktop\\test\\image\\blank.jpg";
-    }
-    defalut:{
-        qDebug() << "wrong type in MAZE_TYPE";
-        return "";
-    }
-    }
+    return "";
 }

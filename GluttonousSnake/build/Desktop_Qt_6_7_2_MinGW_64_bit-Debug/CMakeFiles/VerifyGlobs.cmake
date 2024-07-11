@@ -50,6 +50,7 @@ set(OLD_GLOB
   "C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/mainwindow.cpp"
   "C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/maze.cpp"
   "C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/snack.cpp"
+  "C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/star.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -76,6 +77,7 @@ set(OLD_GLOB
   "C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/mainwindow.h"
   "C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/maze.h"
   "C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/snack.h"
+  "C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/star.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

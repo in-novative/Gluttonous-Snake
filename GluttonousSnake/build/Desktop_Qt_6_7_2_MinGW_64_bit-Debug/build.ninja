@@ -105,6 +105,14 @@ build CMakeFiles/GluttonousSnake.dir/snack.cpp.obj: CXX_COMPILER__GluttonousSnak
   OBJECT_DIR = CMakeFiles\GluttonousSnake.dir
   OBJECT_FILE_DIR = CMakeFiles\GluttonousSnake.dir
 
+build CMakeFiles/GluttonousSnake.dir/star.cpp.obj: CXX_COMPILER__GluttonousSnake_unscanned_Debug C$:/Users/0range/Desktop/Gluttonous$ Snake/GluttonousSnake/star.cpp || cmake_object_order_depends_target_GluttonousSnake
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\GluttonousSnake.dir\star.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/0range/Desktop/Gluttonous Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/include" -isystem E:/Qt/6.7.2/mingw_64/include/QtCore -isystem E:/Qt/6.7.2/mingw_64/include -isystem E:/Qt/6.7.2/mingw_64/mkspecs/win32-g++ -isystem E:/Qt/6.7.2/mingw_64/include/QtWidgets -isystem E:/Qt/6.7.2/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\GluttonousSnake.dir
+  OBJECT_FILE_DIR = CMakeFiles\GluttonousSnake.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target GluttonousSnake
@@ -113,7 +121,7 @@ build CMakeFiles/GluttonousSnake.dir/snack.cpp.obj: CXX_COMPILER__GluttonousSnak
 #############################################
 # Link the executable GluttonousSnake.exe
 
-build GluttonousSnake.exe: CXX_EXECUTABLE_LINKER__GluttonousSnake_Debug CMakeFiles/GluttonousSnake.dir/GluttonousSnake_autogen/mocs_compilation.cpp.obj CMakeFiles/GluttonousSnake.dir/main.cpp.obj CMakeFiles/GluttonousSnake.dir/mainwindow.cpp.obj CMakeFiles/GluttonousSnake.dir/game.cpp.obj CMakeFiles/GluttonousSnake.dir/interface.cpp.obj CMakeFiles/GluttonousSnake.dir/maze.cpp.obj CMakeFiles/GluttonousSnake.dir/snack.cpp.obj | E$:/Qt/6.7.2/mingw_64/lib/libQt6Widgets.a E$:/Qt/6.7.2/mingw_64/lib/libQt6Gui.a E$:/Qt/6.7.2/mingw_64/lib/libQt6Core.a E$:/Qt/6.7.2/mingw_64/lib/libQt6EntryPoint.a || GluttonousSnake_autogen GluttonousSnake_autogen_timestamp_deps
+build GluttonousSnake.exe: CXX_EXECUTABLE_LINKER__GluttonousSnake_Debug CMakeFiles/GluttonousSnake.dir/GluttonousSnake_autogen/mocs_compilation.cpp.obj CMakeFiles/GluttonousSnake.dir/main.cpp.obj CMakeFiles/GluttonousSnake.dir/mainwindow.cpp.obj CMakeFiles/GluttonousSnake.dir/game.cpp.obj CMakeFiles/GluttonousSnake.dir/interface.cpp.obj CMakeFiles/GluttonousSnake.dir/maze.cpp.obj CMakeFiles/GluttonousSnake.dir/snack.cpp.obj CMakeFiles/GluttonousSnake.dir/star.cpp.obj | E$:/Qt/6.7.2/mingw_64/lib/libQt6Widgets.a E$:/Qt/6.7.2/mingw_64/lib/libQt6Gui.a E$:/Qt/6.7.2/mingw_64/lib/libQt6Core.a E$:/Qt/6.7.2/mingw_64/lib/libQt6EntryPoint.a || GluttonousSnake_autogen GluttonousSnake_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = E:/Qt/6.7.2/mingw_64/lib/libQt6Widgets.a  E:/Qt/6.7.2/mingw_64/lib/libQt6Gui.a  E:/Qt/6.7.2/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  E:/Qt/6.7.2/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32

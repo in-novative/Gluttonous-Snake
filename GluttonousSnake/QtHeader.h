@@ -15,26 +15,28 @@
 #include <QPair>
 #include <QKeyEvent>
 #include <QTimer>
+#include <QElapsedTimer>
+#include <QRandomGenerator>
 #include <fstream>
 #include <utility>
 #include <deque>
 #include <string>
 #include <iterator>
-#include "mainwindow.h"
 
-#define interfaceLength 1400
-#define interfaceWidth 1000
+#define interfaceLength 700
+#define interfaceWidth 500
 #define mazeLength 30
 #define mazeWidth 18
-#define GRID 40
-#define XORIGIN 100
-#define YORIGIN 250
+#define GRID 20
+#define XORIGIN 50
+#define YORIGIN 125
+#define SECOND 1000
 
 using uint = unsigned int;
 using position = std::pair<uint, uint>;
 
 enum DIRECTION{
-    LEFT = 1,
+    LEFT = 0,
     UP,
     DOWN,
     RIGHT,
