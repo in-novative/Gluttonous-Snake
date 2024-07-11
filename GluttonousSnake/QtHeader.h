@@ -14,6 +14,7 @@
 #include <QVector>
 #include <QPair>
 #include <QKeyEvent>
+#include <QMessageBox>
 #include <QTimer>
 #include <QElapsedTimer>
 #include <QRandomGenerator>

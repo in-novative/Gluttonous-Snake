@@ -1,10 +1,19 @@
 #include "interface.h"
-#include "game.h"
+#include "mainwindow.h"
 
-void beginInterface() {
-    qDebug() << "beginInterface called";
+interface::interface(){}
+
+interface::~interface(){
+    delete _game;
+    _game = nullptr;
+    //qDebug() << "interface destruct";
+}
+
+void interface::beginInterface() {
+    //qDebug() << "beginInterface called";
 
     QVBoxLayout *layout = getMainWindowLayout();
+    clearLabelsAndButtons(layout);
     QLabel *label = new QLabel("贪吃蛇大作战", window);
     label->setAlignment(Qt::AlignCenter);
     QFont font1("Arial", 40);
@@ -41,9 +50,10 @@ void beginInterface() {
     window->update();
 }
 
-void gameInterface() {
-    qDebug() << "gameInterface called";
+void interface::gameInterface() {
+    //qDebug() << "gameInterface called";
     QVBoxLayout *layout = getMainWindowLayout();
+    clearLabelsAndButtons(layout);
 
     QLabel *label = new QLabel("贪吃蛇大作战", window);
     label->setAlignment(Qt::AlignCenter);
@@ -64,20 +74,24 @@ void gameInterface() {
     layout->addWidget(button2);
     layout->addWidget(button3);
 
-    QObject::connect(button1, &QPushButton::clicked, &soloChallenge);
+    QObject::connect(button1, &QPushButton::clicked, [this](){
+        startGame(1);
+    });
 
     window->update();
 }
 
-void rankInterface(){
-    qDebug() << "rankInterface called";
+void interface::rankInterface(){
+    //qDebug() << "rankInterface called";
     QVBoxLayout *layout = getMainWindowLayout();
+    clearLabelsAndButtons(layout);
     return ;
 }
 
-void helpInterface(){
-    qDebug() << "helpInterface called";
+void interface::helpInterface(){
+    //qDebug() << "helpInterface called";
     QVBoxLayout *layout = getMainWindowLayout();
+    clearLabelsAndButtons(layout);
     return ;
 }
 
@@ -94,7 +108,7 @@ QVBoxLayout* getMainWindowLayout(){
 
 void clearLabelsAndButtons(QLayout* layout) {
     QLayoutItem *item;
-    while ((item = layout->takeAt(0))) {
+    while ((item = layout->takeAt(0))){
         QWidget *widget = item->widget();
         if (widget) {
             if (qobject_cast<QLabel*>(widget) || qobject_cast<QPushButton*>(widget)) {
@@ -112,6 +126,6 @@ QChar DIRECTION2QChar(uint d){
                     : (d == UP) ? 'w'
                     : (d == RIGHT) ? 'd'
                     : (d == DOWN) ? 's'
-                                  : '0';
+                    : '0';
     return result;
 };

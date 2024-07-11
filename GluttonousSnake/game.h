@@ -2,11 +2,22 @@
 #define GAME_H
 
 #include "QtHeader.h"
-#include "mainwindow.h"
 #include "maze.h"
 #include "snack.h"
 #include "star.h"
 
-void soloChallenge();
+class game{
+public:
+    game(int i);
+    ~game();
+    void soloChallenge();
+private:
+    maze* _maze = nullptr;
+    snack* _snack = nullptr;
+    star* _star = nullptr;
+    QElapsedTimer * elapsedTimer = nullptr;
+};
+
+void crash(QString error_msg);
 
 #endif // GAME_H

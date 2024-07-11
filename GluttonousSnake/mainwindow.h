@@ -16,6 +16,7 @@ public:
     ~MainWindow();
     void paintImage(QPixmap image, uint x, uint y, uint width, uint height);
     QChar readKeyboard(QChar skip);
+    inline void clearImages() { images.clear(); }
 
 protected:
     void paintEvent(QPaintEvent *event) override {

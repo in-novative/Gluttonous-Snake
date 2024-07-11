@@ -1,10 +1,11 @@
 #include "maze.h"
+#include "mainwindow.h"
 
 QVector<QPixmap> MazeImages;
 
 maze::maze(uint length, uint width) : maze_length(length), maze_width(width)
 {
-    qDebug() << "maze called";
+    //qDebug() << "maze called";
     /*maze initialization,size is [maze_length] * [maze_width]
     the outermost ring is initialized as a {WALL}, and the rest are {BLANK}*/
     _maze = new MAZE_TYPE*[maze_length];
@@ -31,8 +32,11 @@ maze::maze(uint length, uint width) : maze_length(length), maze_width(width)
 maze::~maze(){
     for(uint i=0; i<maze_length; ++i){
         delete(_maze[i]);
+        _maze[i] = nullptr;
     }
     delete(_maze);
+    _maze = nullptr;
+    //qDebug() << "maze destruct";
 }
 
 bool maze::modifyMaze(uint x, uint y, MAZE_TYPE i){
@@ -45,6 +49,30 @@ bool maze::modifyMaze(uint x, uint y, MAZE_TYPE i){
     }
     else
         return false;
+}
+
+void maze::flashMaze(uint x, uint y, int duration, int interval, MAZE_TYPE final){
+    auto tmp = new MAZE_TYPE;
+    *tmp = _maze[x][y];
+
+    QTimer *timer = new QTimer;
+    timer->start(interval);
+
+    QTimer::singleShot(duration, [=](){
+        if(_maze[x][y]==STAR || _maze[x][y]==PROP){
+            modifyMaze(x, y, final);
+        }
+        QObject::disconnect(timer, nullptr, nullptr, nullptr);
+        delete timer;
+        return ;
+    });
+
+    QObject::connect(timer, &QTimer::timeout, [=](){
+        if(_maze[x][y]==STAR || _maze[x][y]==PROP){
+            *tmp = (*tmp==_maze[x][y]) ? BLANK : _maze[x][y];
+            drawMaze(XORIGIN+x*GRID, YORIGIN+y*GRID, GRID, GRID, *tmp);
+        }
+    });
 }
 
 void maze::drawMaze(){

@@ -9,7 +9,6 @@ public:
     ~snack();
     MAZE_TYPE move(DIRECTION D);
     void modify_snack();
-    void crash(QString error_msg);
     inline DIRECTION getSnackTowards() { return snack_towards; }
     inline uint getSnackLength() { return snack_length; }
     inline void timerStart() { timer.start(); }

@@ -1,4 +1,7 @@
 #include "snack.h"
+#include "game.h"
+#include "interface.h"
+#include "mainwindow.h"
 
 snack::snack(mazePtr M, int misc) : M(M){
     uint x = M->getMazeLength() / 2;
@@ -18,7 +21,7 @@ snack::snack(mazePtr M, int misc) : M(M){
 snack::~snack(){
     M = nullptr;
     snack_body.clear();
-    return ;
+    //qDebug() << "snack destruct";
 }
 
 MAZE_TYPE snack::move(DIRECTION D){
@@ -36,7 +39,7 @@ MAZE_TYPE snack::move(DIRECTION D){
 
     switch (M->getMaze(head_x, head_y)){
         case MAZE_TYPE::WALL : {
-            crash("YOU HIT A WALL !");
+            //crash("YOU HIT A WALL !");
             break;
         }
         case MAZE_TYPE::SNACK_TAIL :
@@ -54,7 +57,7 @@ MAZE_TYPE snack::move(DIRECTION D){
         }
         case MAZE_TYPE::SNACK_HEAD :
         case MAZE_TYPE::SNACK_BODY : {
-            crash("YOU HIT YOUR BODY!");
+            //crash("YOU HIT YOUR BODY!");
             break;
         }
         case MAZE_TYPE::PROP : {
@@ -73,8 +76,4 @@ void snack::modify_snack(){
     M->modifyMaze(std::next(snack_body.begin(), 1)->first, std::next(snack_body.begin(), 1)->second, MAZE_TYPE::SNACK_BODY);
     M->modifyMaze(std::prev(snack_body.end(), 1)->first, std::prev(snack_body.end(), 1)->second, MAZE_TYPE::SNACK_TAIL);
     M->modifyMaze(snack_body.end()->first, snack_body.end()->second, MAZE_TYPE::BLANK);
-}
-
-void snack::crash(QString error_msg){
-    qDebug() << error_msg;
 }

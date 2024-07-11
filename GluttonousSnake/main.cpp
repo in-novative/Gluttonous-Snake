@@ -7,6 +7,7 @@
 
 MainWindow *window;
 QApplication *app;
+interface *userInterface;
 
 int main(int argc, char *argv[]) {
     QApplication _app(argc, argv);
@@ -17,7 +18,8 @@ int main(int argc, char *argv[]) {
     window->setWindowTitle("贪吃蛇游戏");
     window->resize(interfaceLength, interfaceWidth);
 
-    beginInterface();
+    userInterface = new interface();
+    userInterface->beginInterface();
     window->show();
     return app->exec();
 }
