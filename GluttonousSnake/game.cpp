@@ -13,12 +13,12 @@ game::game(int i){
 
 game::~game(){
     delete _maze;
-    _maze = nullptr;
     delete  _snack;
-    _snack = nullptr;
     delete  _star;
-    _star = nullptr;
     delete elapsedTimer;
+    _maze = nullptr;
+    _snack = nullptr;
+    _star = nullptr;
     elapsedTimer = nullptr;
     //qDebug() << "game destruct";
 }
@@ -57,13 +57,13 @@ void game::soloChallenge(){
             _star->timerStart(1);
             _star->timerStop(2);
         }
-        else if(target==WALL){
+        else if(target == WALL){
             _star->timerStop(1);
             _star->timerStop(2);
             _snack->timerStop();
             crash("YOU HIT A WALL!");
         }
-        else if(3<=target && target<=7){
+        else if(SNACK_HEAD_LEFT<=target && target<=SNACK_BODY){
             _star->timerStop(1);
             _star->timerStop(2);
             _snack->timerStop();
@@ -107,11 +107,12 @@ void crash(QString error_msg){
     QMessageBox::StandardButton reply;
     reply = QMessageBox::question(window, "crashed", error_msg + "\nDo you want to continue?",
                                   QMessageBox::Yes | QMessageBox::No);
-    if (reply == QMessageBox::Yes) {
+    if (reply == QMessageBox::Yes){
         userInterface->endGame();
         window->clearImages();
         userInterface->startGame(1);
-    } else {
+    }
+    else{
         userInterface->endGame();
         window->clearImages();
         userInterface->beginInterface();

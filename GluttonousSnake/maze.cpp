@@ -77,6 +77,11 @@ void maze::flashMaze(uint x, uint y, int duration, int interval, uint final){
 
 void maze::drawMaze(){
     drawMaze(XORIGIN, YORIGIN, mazeLength*GRID, mazeWidth*GRID, BACKGROUND);
+    for(int i=1; i<maze_length-1; ++i){
+        for(int j=1; j<maze_width; ++j){
+            drawMaze(XORIGIN+i*GRID, YORIGIN+j*GRID, GRID, GRID, BLANK);
+        }
+    }
 }
 
 void maze::drawMaze(uint position_x, uint position_y, uint length, uint width, uint image){
