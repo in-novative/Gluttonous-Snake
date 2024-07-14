@@ -5,6 +5,7 @@
 #include <QPushButton>
 #include <QLabel>
 #include <QVBoxLayout>
+#include <QStackedWidget>
 #include <QWidget>
 #include <QObject>
 #include <QDebug>
@@ -46,7 +47,7 @@ enum DIRECTION{
 
 enum MAZE_TYPE{
     BACKGROUND = 0,
-    WALL,
+    WALL,  
     BLANK,
     STAR,
     SNACK_HEAD_LEFT,
@@ -56,6 +57,8 @@ enum MAZE_TYPE{
     SNACK_BODY,
     SNACK_TAIL,
     PROP,
+    BOMB,
+    SUN,
     M_COUNT
 };
 

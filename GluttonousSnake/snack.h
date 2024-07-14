@@ -3,9 +3,9 @@
 #include "QtHeader.h"
 #include "maze.h"
 
-typedef class snack{
+typedef class snack {
 public:
-    snack(mazePtr M, int misc);
+    snack(mazePtr M, int misc, int leftKey = Qt::Key_A, int upKey = Qt::Key_W, int rightKey = Qt::Key_D, int downKey = Qt::Key_S);
     ~snack();
     MAZE_TYPE move(DIRECTION D);
     void modify_snack();
@@ -22,6 +22,7 @@ private:
     uint snack_length = 3;
     mazePtr M = nullptr;
     QTimer timer;
+    int leftKey, upKey, rightKey, downKey;                   // Add key bindings for players
 }*snackPtr;
 
 #endif // SNACK_H

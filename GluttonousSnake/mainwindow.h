@@ -7,8 +7,7 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
-class MainWindow : public QMainWindow
-{
+class MainWindow : public QMainWindow {
     Q_OBJECT
 
 public:
@@ -17,6 +16,10 @@ public:
     void paintImage(QPixmap image, uint x, uint y, uint width, uint height);
     QChar readKeyboard(QChar skip);
     inline void clearImages() { images.clear(); }
+
+signals:
+    void spacePressed();
+    void keyPressEventOccurred(QKeyEvent* event);
 
 protected:
     void paintEvent(QPaintEvent *event) override {
@@ -27,13 +30,20 @@ protected:
     }
     void keyPressEvent(QKeyEvent *event) override {
         int key = event->key();
-        keyText.append(QKeySequence(key).toString().toLower());
+        if (key == Qt::Key_Space) {
+            emit spacePressed();
+        } else {
+            keyText.append(QKeySequence(key).toString().toLower());
+            emit keyPressEventOccurred(event);
+        }
     }
 
 private:
     Ui::MainWindow *ui;
     QVector<QPair<QPixmap, QRect>> images;
     QString keyText;
+    QPushButton *button;
+    QLabel *imageLabel;
 };
 
 extern MainWindow *window;

@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../image/1.png</file>
+        <file>../image/background.png</file>
+        <file>../image/blank.png</file>
+        <file>../image/body.jpg</file>
+        <file>../image/bomb.png</file>
+        <file>../image/head_down.jpg</file>
+        <file>../image/head_left.jpg</file>
+        <file>../image/head_right.jpg</file>
+        <file>../image/head_up.jpg</file>
+        <file>../image/help.jpg</file>
+        <file>../image/help.png</file>
+        <file>../image/help.psd</file>
+        <file>../image/OIP.jpg</file>
+        <file>../image/star.jpg</file>
+        <file>../image/sun.png</file>
+        <file>../image/wall.png</file>
+        <file>../resource/ranks.txt</file>
+    </qresource>
+</RCC>

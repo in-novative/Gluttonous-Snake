@@ -1,5 +1,7 @@
 GluttonousSnake_autogen/timestamp: \
 	C:/Users/0range/Desktop/Gluttonous\ Snake/GluttonousSnake/CMakeLists.txt \
+	C:/Users/0range/Desktop/Gluttonous\ Snake/GluttonousSnake/CustomWidget.cpp \
+	C:/Users/0range/Desktop/Gluttonous\ Snake/GluttonousSnake/CustomWidget.h \
 	C:/Users/0range/Desktop/Gluttonous\ Snake/GluttonousSnake/QtHeader.h \
 	C:/Users/0range/Desktop/Gluttonous\ Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake \
 	C:/Users/0range/Desktop/Gluttonous\ Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake \
@@ -8,6 +10,7 @@ GluttonousSnake_autogen/timestamp: \
 	C:/Users/0range/Desktop/Gluttonous\ Snake/GluttonousSnake/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/GluttonousSnake_autogen/moc_predefs.h \
 	C:/Users/0range/Desktop/Gluttonous\ Snake/GluttonousSnake/game.cpp \
 	C:/Users/0range/Desktop/Gluttonous\ Snake/GluttonousSnake/game.h \
+	C:/Users/0range/Desktop/Gluttonous\ Snake/GluttonousSnake/images.qrc \
 	C:/Users/0range/Desktop/Gluttonous\ Snake/GluttonousSnake/interface.cpp \
 	C:/Users/0range/Desktop/Gluttonous\ Snake/GluttonousSnake/interface.h \
 	C:/Users/0range/Desktop/Gluttonous\ Snake/GluttonousSnake/main.cpp \
@@ -211,6 +214,7 @@ GluttonousSnake_autogen/timestamp: \
 	E:/Qt/6.7.2/mingw_64/include/QtWidgets/QMainWindow \
 	E:/Qt/6.7.2/mingw_64/include/QtWidgets/QMessageBox \
 	E:/Qt/6.7.2/mingw_64/include/QtWidgets/QPushButton \
+	E:/Qt/6.7.2/mingw_64/include/QtWidgets/QStackedWidget \
 	E:/Qt/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
 	E:/Qt/6.7.2/mingw_64/include/QtWidgets/QWidget \
 	E:/Qt/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h \
@@ -227,6 +231,7 @@ GluttonousSnake_autogen/timestamp: \
 	E:/Qt/6.7.2/mingw_64/include/QtWidgets/qmessagebox.h \
 	E:/Qt/6.7.2/mingw_64/include/QtWidgets/qpushbutton.h \
 	E:/Qt/6.7.2/mingw_64/include/QtWidgets/qsizepolicy.h \
+	E:/Qt/6.7.2/mingw_64/include/QtWidgets/qstackedwidget.h \
 	E:/Qt/6.7.2/mingw_64/include/QtWidgets/qtabwidget.h \
 	E:/Qt/6.7.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
 	E:/Qt/6.7.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \
